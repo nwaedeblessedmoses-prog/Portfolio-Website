@@ -96,6 +96,6 @@ img {
 }
 
 .about img {
-  background: transparent;
-  mix-blend-mode: scre;
+  mix-blend-mode: multiply;
+  border-radius: 8px;
 }
