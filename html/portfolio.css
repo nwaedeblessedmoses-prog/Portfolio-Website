@@ -1,0 +1,340 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  color: #333;
+  background-color: #ffffff;
+  line-height: 1.6;
+}
+
+.badge {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  background: linear-gradient(120deg, #006eff, #042c97, #0a969b);
+  color: #f97316;
+  border: 1px solid   transparent;
+  padding: auto;
+  width: 5rem;
+  height: 5rem;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+
+.site-header {
+  background-color: #d6cfe1;
+  color: #333;
+  padding: 1rem 0;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.header-container {
+  width: 90%;
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+a {
+    color: #0d47a1;
+    text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+  border-radius: 6px;
+}
+
+.card {
+  width: 90%;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.section {
+  padding: 4rem 0;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 1.8rem;
+  margin-bottom: 2.5rem;
+  color: #1a73e8;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: 800;
+}
+
+.main-nav {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: end;
+  font-size: 1.1rem;
+  font-weight: 500;
+  gap: 1rem;
+}
+
+.main-nav a {
+    padding: 0.5rem 0.9rem;
+    border-radius: 6px;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+}
+
+.main-nav a:hover {
+    background-color: rgba(255, 255, 255, 0.349);
+}
+
+.hero {
+  background: linear-gradient(120deg, #083570, #0d47a1);
+  color: white;
+  text-align: center;
+  padding: 5rem 1.5rem;
+}
+
+
+.hero-content h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.span {
+  color: #f34e01;
+}
+
+.hero-content p {
+  color: #3498db;
+  font-size: 1.25rem;
+  font-weight: 600;
+  max-width: 600px;
+  margin: 0 auto 2rem;
+}
+
+.btn {
+  background: linear-gradient(105deg, #0b7ea16b 20%, #2007ff5b 80%);
+  color: #ffffff;
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: transform 0.3s ease, box-shadow 0.2s ease;
+  cursor: pointer;
+}
+
+.btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 20px rgba(149, 146, 194, 0.26);
+}
+
+#about {
+    background: #faebd8;
+}
+
+.about-content {
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.about-content p {
+  margin-bottom: 1.2rem;
+  font-size: 1.05rem;
+  font-weight: bold;
+}
+
+/* Educatiion */
+.education-section {
+background-color: #585e6dd7;
+}
+
+.school-card {
+  padding: 1.5rem 1rem;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border: 2px solid rgba(148, 163, 184, 0.35);
+  border-radius: 16px;
+  backdrop-filter: blur(20px);
+  list-style: none;
+  -webkit-backdrop-filter: blur(20px);
+  transition: border-color 0.3s ease, transform 0.3s ease, background 0.3s ease;
+}
+
+.cert {
+  text-align: center;
+  color: #1a095ab4;
+  font-size: 1.5rem;
+}
+
+.title {
+  color: #061c2c;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+ul {
+  list-style: square;
+  padding: 0 1rem;
+  font-weight: bold;
+}
+
+/* Skills */
+.skills-section {
+  background-color: #7598a5;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.2rem;
+}
+
+.skill-card {
+  background-color: #ebedf169;
+  padding: 1.5rem 1rem;
+  text-align: center;
+  border-radius: 8px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  border: 2px solid rgba(148, 163, 184, 0.014);
+  border-radius: 16px;
+  transition: border-color 0.3s ease, transform 0.3s ease, background 0.3s ease;
+
+}
+
+.skill-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 12px rgba(2, 2, 2, 0.26);
+}
+
+
+.projects-section {
+  background: linear-gradient(to bottom, rgba(119, 71, 138, 0.87), rgba(29, 52, 92, 0.575), rgba(219, 7, 7, 0.212)), url("https://res.cloudinary.com/sbskcf6i/image/upload/v1787085285/gq4tojk4lmpbkbchgcpr.png") center/cover no-repeat;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.projects-card {
+  border: 1px solid #41495388;
+  border-radius: 16px;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  margin: 0.2rem;
+  transition: border-color 0.3s ease, transform 0.3s ease, background 0.3s ease;
+}
+
+.projects-card:hover {
+  box-shadow: 0 4px 20px rgba(54, 27, 41, 0.986);
+  transform: translateY(-3px);
+  
+}
+
+.card-content  {
+  padding: 1.5rem 1rem;
+  font-weight: 600;
+}
+
+.projects-title {
+  color: #0d47a1;
+  font-size: 1.5rem;
+  margin-bottom: 0.2rem;
+}
+
+.projects-description {
+  color: #ffffff8f;
+  font-weight: 500;
+  text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.8);
+  margin-bottom: 0.5rem;
+}
+
+.projects-tech {
+  color: #1a73e8;
+  background-color: rgba(115, 122, 133, 0.897);
+  font-weight: bold;
+  font-size: medium;
+  padding: 0.2rem;
+  border: 1px solid #3498db;
+  border-radius: 12px; 
+}
+
+/* Contact */
+.contact-section {
+  background-color: #f0f4f8;
+  text-align: center;
+}
+
+.contact-info {
+  margin-top: 1.5rem;
+}
+
+.contact-info p {
+  margin-bottom: 0.6rem;
+  font-size: 1.05rem;
+}
+
+/* Footer */
+.site-footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+}
+
+
+/* tablet */
+@media (max-width: 768px) {
+  .skills-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .projects-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .header-container {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+/* mob */
+@media (min-width: 900px) {
+  .hero-content h2 {
+    font-size: 2.6rem;
+  }
+
+  .skills-grid {
+    grid-template-columns: repeat(6, 1fr);
+  }
+
+  .projects-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .section-title {
+    font-size: 2.1rem;
+  }
+}
