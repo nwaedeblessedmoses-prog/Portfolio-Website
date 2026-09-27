@@ -3,10 +3,85 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>JavaScript Basics</title>
-  <script src="/js/app.js"></script>
+  <title>JavaScript DOM</title>
+  <!-- <script src="../js/about.js/"></script> -->
 </head>
-    <h1>My First JavaScript</h1>
-<body>
+<body class="box">
+  <div id="main" class="box">
+    <h1 id="title">This is an about</h1>
+    <h2 class="subtitle">Welcome to the third class</h2>
+
+    <p>Welcome to TechUp Academy</p>
+    <p>This is the first Cohort</p>
+    <p id="demo">
+
+    </p>
+  </div>
+
+
+  <button id="add-item">Add new item</button>
+  <div id="list-container"></div>
+
+<div class="card"></div>
+<div class="card"></div>
+<div class="card"></div>
+<div class="card"></div>
+
+
+
+<script>
+  const addBtn = document.querySelector("#add-item")
+  const listContainer = document.querySelector("#list-container")
+
+  let counter = 21
+  addBtn.addEventListener("click", function () {
+    const newItem = document.createElement("div")
+    const Sname = "Student name"
+   newItem.classList.add("card")
+   newItem.textContent = counter + Sname + "!" + "Moses";
+   listContainer.appendChild(newItem);
+   counter++
+})
+
+  const box = document.querySelector(".box")
+
+  box.style.backgroundColor = "Lightblue"
+  box.style.padding = "20px"
+  box.style.borderRadius = "20px"
+
+  //  const subtitle = document.querySelector("subtitle") 
+
+  //  subtitle.classList.remove("hidden") 
+
+  const title = document.getElementById("title")
+  const demo = document.getElementById("demo")
+
+  title.textContent = "This is Week 7 class 2";
+  demo.innerText = Date();
+
+  const cards = document.getElementsByClassName("card");
+
+  Array.from(cards).forEach((card) => {
+    card.innerHTML = "<b>This is a previous card</b>"
+  })
+
+  const container = document.getElementById("main")
+  const seed = container.getElementsByTagName("p")
+
+  seed.innerHTML = "This is a paragraph"
+  getElementById("demo").innerHTML = seed[0].innerHTML + "<br>" + seed[1].innerHTML;
+
+  // const myPara = document.querySelector(".card")
+
+
+  // myPara.innerHTML = "Hello World"
+
+  // const x = document.getElementById("main");
+  // const y = x.getElementTagName("p") -->
+
+  // y.innerHTML = "This is the First Cohort"
+
+  // document.getElementById("demo").innerHTML = y[0].innerHTML+ "<br>" + y[1].innerHTML;
+</script>
 </body>
 </html    

@@ -1,16 +1,15 @@
+
+
 // For loop
-function  addd(a, b) {
-    return a + b
-}
+// function  addd(a, b) {
+//     return a +v b
+// }
 
 
-let perimeterr =  add(4, 5)  * 2
-let result = add(4, 5) * 8
-console.log(perimeter)
-console.log(result)
-
-
-function area
+// let perimeterr =  add(4, 5)  * 2
+// let result = add(4, 5) * 8
+// console.log(perimeter)
+// console.log(result)
 
 // // While loop
 // let count = 1

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        h1 {
+            color: brown;
+            font-style: italic;
+        }
+    </style>
+    <h1>Student List</h1>
+
+    <button id="showBtn" type="button">Show Available Students</button>
+    <button id="clearBtn">Clear</button>
+    <div id="output"></div>
+
+    <p id="demo"></p>
+    <script>
+// Array of Objects
+        const students = [
+            {id:1, name: "Nwaede", age: 16, isPresent: true},
+            {id:2, name: "Cody", age: 16, isPresent: true},
+            {id:3, name: "Emmanuella", age: 16, isPresent: true},
+            {id:4, name: "Rhodes", age: 16, isPresent: false},
+        ]
+
+        const output = document.getElementById("output")
+        const showBtn = document.getElementById("showBtn")
+        const clrBtn = document.getElementById("clrBtn")
+
+        showBtn.addEventListener("click", function() {
+            let html = "<ul>"
+
+                for (let student of students) {
+            if (student.isPresent) {
+                html += `<li>  ${student.name} - ${student.age}</li>`;
+                
+            }
+        }
+
+        html += "</ul>";
+        output.innerHTML =  html;
+        })
+        clrBtn.addEventListener("click", function() {
+            output.innerHTML = ""
+        })
+
+
+        for (let student of students) {
+            if (student.isPresent === true) {
+                console.log(student.name + " is Present " + student.age)
+            } else {
+                console.log(student.name + " is not present")
+            }
+        }
+
+    // console.log(students[0].name)
+    // console.log(students[1].isPresent)
+    // console.log(students[2].age)
+    // console.log(students[2].name)
+    // console.log(students[1].age)
+
+
+// Objects
+        // const student = {
+        //     name: "Nwaede Moses",
+        //     sId: "NM01",
+        //     Age: 16,
+        //     isPresent: true,
+        //     class: "SS1",
+        //     subject: ["Math", "English", "Science"]
+        // }
+
+        // student.class = "SS2"
+        // const key ="sId"
+
+        // console.log(student.name)
+        // console.log(student.class)
+        // console.log(student[key])
+
+    //   Looping Through Arrays
+
+    // const colors = ["Red", "Blue", "Green"]
+    // colors.forEach(function(color, index) {
+    //     console.log(index + ":" + color)
+    // })
+
+// First Part
+    // const colors = ["Red", "Blue", "Green"]
+
+    // for (let i = 0; i < colors.length; i++) {
+    //     console.log(colors[i])
+    // }
+    // ------------------------------------------------------------  
+
+// same syntax different semantics
+    // const colors = ["Red", "Blue", "Green"]
+
+    // for (let color of colors) {
+    //     console.log(color)
+    // }
+
+
+//  const fruits = [`Apple`, `Banana`, `Orange`]
+
+//  const num = [2, 5, 12, 17, 20]
+
+//  const mixed = [2, `Mary`, true, null]
+
+//  fruits.push(`Mango`)
+//  fruits.push(`Cherry`)
+//  fruits.push(`Cucumber`)
+
+// //  fruits.pop()
+//  fruits.shift()
+//  fruits.unshift(`Tangerine`)
+//  fruits.shift()
+ 
+//  const fruit = fruits.indexOf(`Banana`)
+//  const inde = fruits.includes(`Apple`)
+
+// console.log(fruit)
+// console.log(inde)
+// console.log(fruits)
+// console.log(num[2])
+// console.log(mixed[2])
+
+    </script>
+</body>
+</html>
